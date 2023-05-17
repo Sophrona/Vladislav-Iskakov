@@ -1,5 +1,6 @@
-import ghPages from "gulp-gh-pages";
+import ghPages from 'gh-pages';
+import path from 'path';
 
-export const deployGH = () => {
-  return app.gulp.src("./dist/**/*").pipe(ghPages());
+export const deployGH = (cb) => {
+  ghPages.publish(path.join(process.cwd(), './dist'), cb);
 };
