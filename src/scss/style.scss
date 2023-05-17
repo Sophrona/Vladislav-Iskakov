@@ -1,0 +1,33 @@
+@import 'base/base';
+@import 'base/mixins';
+
+// Connect custom fonts
+@include font('Flaticon', 'Flaticon.ttf', 'normal', 'normal');
+@import 'fonts/flaticon';
+
+// Connect fontawesome
+@import "fonts/fonts";
+@import "fonts/fontawesome/fontawesome";
+@import "fonts/fontawesome/solid";
+@import "fonts/fontawesome/brands";
+
+// Connect libs
+@import 'base/bootstrap.min';
+@import 'base/magnific-popup';
+
+// Connect common styles
+@import 'common';
+@import 'cyber-eye';
+
+// Connect section styles
+@import 'sections/header';
+@import 'sections/footer';
+
+// Connect page styles
+@import 'pages/inner-pages';
+
+// Connect main style
+@import 'main';
+
+// Connect color-theme
+@import 'base/color-theme';
